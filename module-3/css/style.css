@@ -17,7 +17,7 @@ body{
 	font-size: 12px;
 	line-height: 17px;
 	color: #4e5050;
-	background:url(../image/fon.jpg) center no-repeat;
+	background:url(../image/background.jpg) center no-repeat;
 	background-size: cover;
 }
 .wrapper{
