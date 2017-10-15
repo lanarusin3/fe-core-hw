@@ -249,5 +249,25 @@ h2{
     opacity: 1;
 	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
 }
+.buttom-top {
+    position: fixed;
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 100px;
+    top:90%;
+    left: 81%;
+    text-decoration: none;
+}
+
+.buttom-top:before {
+    content: url(../image/up.png);
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    left: 11px;
+    top: 4px;
+}
 
 
