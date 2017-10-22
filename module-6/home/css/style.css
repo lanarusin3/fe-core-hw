@@ -1,0 +1,456 @@
+body{
+	background: url(../image/background.jpg) no-repeat;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	color: #ffffff;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 1024px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 890px;
+	margin: 0 auto;
+	font-family:'Pathway Gothic One';
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.logo{
+	position: relative;
+	top: 45px;
+	left: 50%;
+	height: 140px;
+	width: 140px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	font-family: 'Dorsa';
+	font-size: 60px;
+	line-height: 140px;
+	color: #263555;
+}
+nav{
+	position: relative;
+	top: -40px;
+}
+nav > .menu > li{
+	display: inline-block;
+	margin: 0 30px;
+}
+nav > .menu > li:nth-child(3){
+	margin-right: 185px;
+}
+nav > .menu > li:hover{
+	color: #263555;
+}
+.menu-item{
+	position: relative;
+}
+ .menu-item > .sub-menu{
+	position: absolute;
+	top:30px;
+	left: -8px;
+	display: none;
+	width: 70px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #6b7488;
+}
+ .menu-item:hover > .sub-menu{
+	display: block;
+}
+.menu-item > .sub-menu > li{
+	display: inline-block;
+}
+ .menu-item > .sub-menu:before{
+	content: url(../image/line.png);
+	position: absolute;
+	top: -16px;
+	left: 50%;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;	
+	margin-top:50px;
+	padding: 60px;
+}
+.content-1{
+
+	position: relative;
+	font-family:'Pathway Gothic One'; 
+	text-transform: uppercase;
+
+}
+.content-1 > .frase-1{
+	position: absolute;
+	top: 218px;
+	padding: 20px 15px;
+	display: inline-block;
+	background-color: #ffffff;
+	border: 1px solid #efefec;
+	font-size: 22.41px;
+	color: #263555;
+	z-index: 50;
+}
+.content-1 > .frase-2{
+	position: absolute;
+	top: 283px;
+	padding: 17px;
+	display: inline-block;
+	background-color: #38afe5;
+	font-size: 34.42px;
+	color: #ffffff;
+	z-index: 50;
+}
+
+.slider{
+	position: relative;
+    overflow: hidden;
+    width: 902px;
+    height: 580px;
+}
+.slider > input, 
+.slider > label {
+    display: none;
+}
+.slider > input:checked + div + label:after {
+    content: url(../image/slider-1.png);
+    position: absolute;
+	right: 7px;
+	top:36px;
+	z-index: 100;
+}
+.slider > input:checked + div + label + label:after {
+    content: url(../image/slider-2.png);
+	position: absolute;
+	left: 7px;
+	top:36px;
+	z-index: 100;
+}
+
+.slider > input:checked + div + label{
+	position: absolute;
+	top: 475px;
+	left: 36px;
+	display: inline-block;
+	height: 90px;
+	width: 45px;
+	background-color: #39afe5;
+	border-radius: 45px 0 0 45px;
+	cursor: pointer;
+	z-index: 50;
+}
+.slider > input:checked + div + label + label {
+    position: absolute;
+    top: 475px;
+	left: 81px;
+	display: inline-block;
+	background-color: #39afe5;
+	height: 90px;
+	width: 45px;
+	border-radius: 0 45px 45px 0;
+	cursor: pointer;
+	z-index: 50;
+}
+.slider > input:checked + div + label:hover,
+.slider > input:checked + div + label + label:hover{
+	background-color: rgba(56,125,179,0.85);
+}
+
+
+ .slider > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+ .slider > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.slider > input:checked + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+.content-2{
+	padding-bottom: 137px;
+}
+h2{
+	margin-top: 60px;
+	font-family: 'Pathway Gothic One';
+	font-size: 30.42px;
+	text-transform: uppercase;
+	color: #263555;
+}
+.list{
+	position: relative;
+	margin-top: 50px;
+}
+.list > ul > .list-item{
+	display: inline-block;
+	padding-right: 15px;
+}
+.list > ul > .list-item:nth-child(3){
+	padding-right: 0;
+}
+.info{
+	position: absolute;
+	top:0;
+	left: 0;
+    visibility: hidden;
+    opacity: ;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+
+	width: 147px;
+	height: 270px;
+	background-color: #193149;
+	color: #cbc6c6;
+}
+.name{
+	text-align: center;
+	padding: 21px 0;
+	font-family: 'Open Sans Condensed';
+	font-size: 30.42px;
+	text-transform: uppercase;
+}
+.inform{
+	padding: 0 8px;
+	line-height: 15.21px;
+	font-size: 10.41px;
+}
+.buttom{
+	position: absolute;
+	bottom: 20px;
+	left: 70px;
+	height: 20px;
+	width: 60px;
+	text-align: center;
+	line-height: 18.25px;
+	background-color: #fbf6f9;
+	border:1px solid #5a626f;
+	border-radius: 3px;
+	font-size: 12.01px;
+}
+.buttom > a {
+	text-decoration: none;
+	color: black;
+}
+.list-item-1:hover > .info{
+	visibility: visible;
+    opacity: 1;
+	transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.content-3{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.content-3-1{
+	flex-basis: 65%;
+	width: 65%;
+	align-self: flex-start;
+	line-height: 19px;
+}
+.content-3-border{
+	border:1px solid #e1dfdf;
+
+}
+.content-3-1 > ul{
+	display: inline-flex;
+	flex-direction: row;
+	border:1px solid #e1dfdf;
+	border-bottom: none;
+
+}
+.content-3-1 > ul > li {
+	width: 125px;
+	text-align: center;
+	padding: 10px 0;
+	background: #fcfafa;
+	padding: 10px 0;
+	font-family:'Pathway Gothic One';
+	font-size: 20px;
+	color:  #6b7488;
+	text-transform: uppercase;
+}
+.content-3-1 > ul > li:nth-child(2){
+	border-right: 1px solid #e1dfdf;
+	border-left: 1px solid #e1dfdf;
+}
+.content-3-1 > ul > li:nth-child(1){
+	background: white;
+	border-bottom: 1px solid white;
+}
+.content-3-1 > ul > li:nth-child(1) > a{
+	color: #38afe5;
+
+}
+.content-3-2{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 40px 15px;
+	font-size: 10px;
+	color:#4e5050;
+	padding-bottom: 80px;
+}
+.content-3-2 > img{
+	padding-right: 20px;
+}
+h4{
+	font-size: 15px;
+	color: #263555;
+	padding-bottom: 20px;
+}
+.content-3-2 > div{
+	display: flex;
+	flex-direction: column;
+}
+.content-3-2 > div > p >.red{
+	color: #fa7e7e;
+}
+.content-3-3{
+	border-top: none;
+}
+.content-buttom{/*кнопка*/
+	position: absolute;
+	bottom: 40px;
+	right: 0;
+	margin-right: 30px;
+	width: 60px;
+	font-size: 12px;
+	padding:  3px 0;
+	text-align: center;
+	background-color: #fbf6fa;
+	border-radius: 4px;
+	border:1px solid black;
+	color: black;
+}
+.sidebar{
+	flex-basis: 30%;
+	width: 30%;
+	align-self: flex-end;
+	line-height: 19px;
+	color: #263555;
+	border:1px solid #e1dfdf;
+}
+h3{
+	background: #fcfafa;
+	border-bottom: 1px solid #e1dfdf;
+	padding: 7px 0;
+	font-family: 'Open Sans Condensed';
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.sidebar > p{
+	margin:0 15px;
+	font-size: 15px;
+	padding: 45px 0 20px 0 ;
+}
+.sidebar > form{
+	text-align: center;
+}
+form > input[type="email"]{
+	width: 200px;
+	padding: 5px 25px;
+	border:1px solid #efeded;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #868f8f;
+}
+.sidebar > ul{
+	margin: 45px 15px;
+}
+.sidebar > ul > li{
+	padding-bottom: 20px;
+} 
+.sidebar > ul > li:before{
+	content: url(../image/marker.png);
+	margin-right: 15px;
+
+} 
+.buttom-top {
+    position: fixed;
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 100px;
+    top:90%;
+    left: 81%;
+    text-decoration: none;
+}
+
+.buttom-top:before {
+    content: url(../image/up.png);
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    left: 11px;
+    top: 4px;
+}
+/*подвал*/
+
+footer{
+	padding: 40px 70px;
+	background-color: #30455b;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed';
+	text-transform: uppercase;
+}
+footer > ul{
+	display: inline-flex;
+	justify-content: space-between; 
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+footer > ul > li{
+	width: 88px;
+	margin: 0 52px; 
+}
+footer > .littel{
+	width: 125px;
+
+}
+.littel{
+	font-family: arial;
+	font-size: 10px;
+	line-height: 19px;
+}
+.after-footer{
+	min-height: 130px;
+}
+.after-footer > ul{
+	text-align: center;
+	margin-top: 30px;
+}
+.after-footer > ul > li{
+	display: inline-block;
+	padding: 0 5px;
+
+}
+
+.after-footer > .littel{
+	text-align: center;
+	padding-top: 30px;
+}
+
+

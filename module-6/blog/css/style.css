@@ -1,0 +1,271 @@
+body{
+	background: url(../image/background.jpg) no-repeat;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	color: #ffffff;
+}
+
+/*делаем основные блоки в колонку
+ с отступами*/
+.flex-conteiner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 1024px;
+	min-height: 1000px;
+	margin: 0 auto;
+}
+
+header{
+	width: 890px;
+	margin: 0 auto;
+	font-family:'Pathway Gothic One';
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.logo{/*логотип*/
+	position: relative;
+	top: 45px;
+	left: 50%;
+	height: 140px;
+	width: 140px;
+	background-color: #ffffff;
+	border-radius: 50%;/*круг*/
+	transform: translate(-50%);
+	text-align: center;
+	font-family: 'Dorsa';
+	font-size: 60px;
+	line-height: 140px;
+	color: #263555;
+}
+nav{
+	position: relative;
+	top: -40px;/*отступаем сверху от сайта*/
+}
+nav > .menu > li{
+	display: inline-block;
+	margin: 0 30px;/*отступы между пунктами меню*/
+}
+nav > .menu > li:nth-child(3){
+	margin-right: 185px;/*место для лого*/
+}
+nav > .menu > li:hover{
+	color: #263555;
+}
+.menu-item{
+	position: relative;
+}
+ .menu-item > .sub-menu{
+	position: absolute;
+	top:30px;
+	left: -8px;
+	display: none;
+	width: 70px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #6b7488;
+}
+ .menu-item:hover > .sub-menu{
+	display: block;
+}
+.menu-item > .sub-menu > li{
+	display: inline-block;/*что бы реагировали на текст алинг*/
+}
+ .menu-item > .sub-menu:before{
+	content: url(../image/pip.png);
+	position: absolute;
+	top: -16px;
+	left: 50%;
+}
+main{/*блок с основной информацией*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #ffffff;
+	padding: 60px;
+	margin-top: 60px;
+
+}
+h2{
+	display: block;
+	font-family: 'Pathway Gothic One';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #263555; 
+}
+.name{/*стиль написания*/
+	font-size: 13px;
+	line-height: 19px;
+	color: #263555;
+}
+.flex-item-1{/*делим main на 2 осноовных флекса с базовой шириной*/
+	width: 77%;
+	flex-basis: 77%
+	}
+.content{/*обозначение 2-х контейнеров с основной информацией*/
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.content-1{
+	border-bottom: 1px solid #dedbdb;
+	padding-bottom: 50px;
+}
+.content-2{
+	padding-top: 50px;
+}
+.calendar{/*часть 2 после h2*/
+	display:flex;
+	flex-direction: row;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+.calendar > .date{
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 13px;
+	margin-right: 10px;
+	background-color: #38afe5;
+	border-radius: 15px;
+	font-size: 9px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.flex-inform{
+	display: flex;
+	flex-direction: column;
+}
+.calendar > .flex-inform > .inform{
+	text-transform: uppercase;
+	height: 15px;
+	padding-bottom: 10px;
+}
+.coments{
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 560px;
+	font-size: 10px;
+	color: #868f8f;
+}
+.calendar > .coments-2{
+}
+.conteiner{/*часть 3*/
+	display: flex;
+	flex-direction: row;
+}
+.conteiner > div > img{ 
+	padding-right: 20px;
+ }
+ .conteiner > div > p{
+ 	padding-bottom: 18px;
+ }
+.usually{/*стиль абзацев*/
+	font-size: 10px;
+	line-height: 16px;
+	color: #4e5050;
+}
+.buttom{/*кнопка*/
+	margin-left: 306px;
+	width: 60px;
+	font-size: 12px;
+	padding:  3px 0;
+	text-align: center;
+	background-color: #fbf6fa;
+	border-radius: 4px;
+	border:1px solid black;
+	color: black;
+}
+
+.flex-item-2{/*обёртка сайд баров*/
+	width: 23%;
+	flex-basis: 23%;
+}
+.categories{
+	display: flex;
+	flex-direction: column;
+}
+.categories > .name {
+	margin-top: 45px;
+}
+.categories > .name > ul > li{
+	padding: 10px 0;
+}
+.categories > .name > ul > li:before{
+	content: url(../image/line.png);
+	padding-right: 8px;
+}
+.archive{
+	margin-top: 55px;
+}
+/*фиксированная кнопка вверх*/
+.buttom-top {
+    position: fixed;
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 100px;
+    top:90%;
+    left: 81%;
+    text-decoration: none;
+}
+
+.buttom-top:before {
+    content: url(../image/up.png);
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    left: 11px;
+    top: 4px;
+}
+/*подвал*/
+
+footer{
+	padding: 40px 70px;
+	background-color: #30455b;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed';
+	text-transform: uppercase;
+}
+footer > ul{
+	display: inline-flex;
+	justify-content: space-between; 
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+footer > ul > li{
+	width: 88px;
+	margin: 0 52px; 
+}
+footer > .littel{
+	width: 125px;
+
+}
+.littel{
+	font-family: arial;
+	font-size: 10px;
+	line-height: 19px;
+}
+.after-footer{
+	min-height: 130px;
+}
+.after-footer > ul{
+	text-align: center;
+	margin-top: 30px;
+}
+.after-footer > ul > li{
+	display: inline-block;
+	padding: 0 5px;
+
+}
+
+.after-footer > .littel{
+	text-align: center;
+	padding-top: 30px;
+}
