@@ -1,0 +1,246 @@
+body{
+	background: url(../image/background.jpg) no-repeat;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	color: #ffffff;
+	line-height: 19px;
+}
+#wrapper{
+	display: flex;
+	flex-direction: column;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header{
+	width: 890px;
+	margin: 0 auto;
+	font-family:'Pathway Gothic One';
+	font-size: 28px;
+	text-transform: uppercase;
+}
+#logo{
+	position: relative;
+	top: 45px;
+	left: 50%;
+	height: 140px;
+	width: 140px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	font-family: 'Dorsa';
+	font-size: 60px;
+	line-height: 140px;
+	color: #263555;
+}
+nav{
+	position: relative;
+	top: -40px;
+}
+nav > .menu > li{
+	display: inline-block;
+	margin: 0 30px;
+}
+nav > .menu > li > a{
+	color: white;
+}
+nav > .menu > li:nth-child(3){
+	margin-right: 185px;
+}
+nav > .menu > li > a:hover{
+	color: #263555;
+	cursor: pointer;
+}
+.menu-item{
+	position: relative;
+}
+ .menu-item > .sub-menu{
+	position: absolute;
+	top:29px;
+	left: -7px;
+	display: none;
+	width: 70px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-size: 20px;
+	color: #6b7488;
+}
+ .menu-item:hover > .sub-menu{
+	display: block;
+}
+.menu-item > .sub-menu > li{
+	display: inline-block;
+}
+ .menu-item > .sub-menu:before{
+	content: url(../image/line.png);
+	position: absolute;
+	top: -16px;
+	left: 50%;
+}
+main{
+	margin-top: 60px;
+	background-color: #ffffff;
+	padding: 100px 60px;
+}
+h2{
+	font-family: 'Pathway Gothic One';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #263555; 
+}
+a{
+	text-decoration: none;
+	color: #666565;
+}
+.content{
+	display: flex;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	flex-basis: 80%;
+}
+.info-2{
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+}
+.info-2 > .map{
+	padding: 0 20px 130px 0;
+}
+.info-2 >.information > table> caption{
+	width: 133px;
+	margin-bottom: 30px;
+	}
+.info-2 > .information > table{
+	width: 224px;
+	font-size: 14px;
+	color: #666565;
+}
+.name{
+	padding-right: 26px;
+	padding-bottom: 8px;
+}
+.second-table{
+	margin-top: 55px;
+}
+.red{
+	color: #fa7e7e;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	flex-basis: 20%;
+}
+
+.forma > form{
+	width: 210px;
+	margin-top: 50px;
+}
+.forma > form > input,
+.forma > form > textarea
+{
+	margin-bottom: 18px;
+	padding: 8px;
+	background: #fcfafa;
+	border:1px solid #d4d0d0;
+}
+.forma > form > .input{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 17px;
+}
+input[type="submit"]{
+	margin-right: 18px;
+	padding: 6px 15px;
+	background: #fbf6f8;
+	border:1px solid #d4d0d0;
+	border-radius: 7px;
+	font-size: 15px;
+	color: #000000;
+}
+#buttom-top {
+    position: fixed;
+    background-color: #38afe5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: 100px;
+    top:90%;
+    left: 81%;
+    text-decoration: none;
+}
+
+#buttom-top:before {
+    content: url(../image/up.png);
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    left: 11px;
+    top: 4px;
+}
+footer{
+	height: 135px;
+	padding-left:180px;
+	background-color: #30455b;
+	font-size: 16px;
+	font-family: 'Open Sans Condensed';
+	color: #fff;
+	text-transform: uppercase;
+}
+footer > ul{
+	margin-top: 40px;
+	padding: 0; 
+}
+
+footer > ul >li{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 190px;
+    height: 30px;
+    vertical-align: text-top;
+}
+
+.littel{
+	font-family: arial;
+	font-size: 12px;
+	text-transform: none;
+}
+#after-footer{
+	margin-top: 30px;
+}
+#after-footer > ul{
+	text-align: center;
+}
+#after-footer > ul > li{
+	display: inline-block;
+	padding: 0 5px;
+
+}
+#after-footer > .littel{
+	text-align: center;
+	padding-top: 30px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #263555;
+  text-transform: uppercase;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #263555;
+  text-transform: uppercase;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #263555;
+  text-transform: uppercase;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #263555;
+  text-transform: uppercase;
+}
