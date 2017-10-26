@@ -48,7 +48,7 @@ nav > .menu > li > a{
 nav > .menu > li:nth-child(3){
 	margin-right: 185px;
 }
-nav > .menu > li:hover{
+nav > .menu > li > a:hover{
 	color: #263555;
 	cursor: pointer;
 }
