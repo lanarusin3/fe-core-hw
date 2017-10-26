@@ -42,6 +42,9 @@ nav > .menu > li{
 	display: inline-block;
 	margin: 0 30px;
 }
+nav > .menu > li > a{
+	color: white;
+}
 nav > .menu > li:nth-child(3){
 	margin-right: 185px;
 }
