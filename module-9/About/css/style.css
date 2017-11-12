@@ -1,0 +1,384 @@
+body{
+	background: url(../image/background.jpg) no-repeat;
+	background-size: cover;
+	font-family: arial, sans-serif;
+	line-height: 19px;
+	color: #4e5050;
+}
+#wrapper{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+header{
+	font-family:'Pathway Gothic One';
+	font-size: 1.8em;
+	text-transform: uppercase;
+}
+.menu{
+	margin: auto;
+	flex-wrap: nowrap;
+}
+.menu > li{
+	text-align: center;
+	display: inline-block;
+}
+.menu{
+	width: 80%;
+	margin-bottom: 10%;
+}
+.menu > li>a:hover{
+	color: #263555;
+	text-decoration: none;
+}
+
+.menu-item{
+	position: relative;
+}
+.menu-item > .sub-menu{
+	position: absolute;
+	top:30px;
+	display: none;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 3px;
+	font-size: 20px;
+	color: #6b7488;
+}
+.empty{
+	width: 20%;
+}
+.menu-item:hover > .sub-menu{
+	display: block;
+}
+.menu-item > .sub-menu > li{
+	display: inline-block;
+}
+.menu-item > .sub-menu:before{
+	content: url(../image/pip.png);
+	position: absolute;
+	top: -17px;
+	left: 50%;
+}
+#logo{
+	padding: 0 42px;
+	position: relative;
+	top:100px;
+	left: 50%;
+	width: 170px;
+	height: 170px;
+	line-height: 170px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	font-family: 'Dorsa';
+	font-size: 60px;
+	color: #263555;
+}
+main{
+	width: 100%;
+	background: #ffffff;
+	padding: 5%;
+	font-size: 13px;
+	margin: auto;
+}
+h2{
+	font-family: 'Pathway Gothic One';
+	font-size: 32px;
+	font-weight: 100;	
+	color: #263555;
+	padding-bottom: 6%;
+}
+.fly{
+	display: block;
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 0 25px 18px 0;
+}
+.clear{
+	clear: both;
+}
+
+.name{
+	font-size: 15px;
+	color: #263555;
+}
+.list{
+}
+.list>li{
+	display: block;
+	width: 100%;
+	position: relative;
+	padding-bottom: 20px;
+}
+.list>li:nth-child(1):before{
+	content: url(../image/marker.png);
+	position: absolute;
+	top: 10px;
+	left: -20px;
+}
+.list>li:nth-child(2):before{
+	content: url(../image/marker_2.png);
+	position: absolute;
+	top: 10px;
+	left: -20px;
+}
+.list>li:nth-child(3):before{
+	content: url(../image/marker_3.png);
+	position: absolute;
+	top: 10px;
+	left: -20px;
+}
+.line{
+	width: 900px;
+	border-bottom: 1px solid #dedbdb;
+	margin-bottom: 10%;
+}
+.choose{
+	vertical-align: top;
+	padding: 5% 0;
+	display: inline-block;
+}
+.a{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.choose > li{
+	width: 120%;
+	padding: 5% 0;
+}
+.choose > li:before{
+	content: url(../image/line.png);
+	padding-right: 3%;
+}
+.frase{
+	position: relative;
+	border: 1px solid #e0dddd;
+	width: 100%;
+	margin:0 auto;
+	margin-bottom: 35px; 
+	height:auto;
+	padding: 14px 14px  25px 14px;
+	background-color: #fcfafa;
+	border: 1px solid #e0dddd;
+}
+.frase:after, .frase:before{
+	content: "";
+	display: block;
+	border: 10px solid transparent;
+	border-top: 10px solid #e0dddd ;
+	background: transparent;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -15px;
+}
+.frase::after {
+    border-top: 10px solid #fcfafa;
+    bottom: -19px; 
+   }
+ .cent{
+	text-align: center;
+}
+.avtor{
+	font-size: 10px;
+}
+
+
+
+
+
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-bottom: 5%;
+	background-color: #30455b;
+	font-size: 1em;
+	font-family: 'Open Sans Condensed';
+	color: #fff;
+	text-transform: uppercase;
+}
+footer > ul{
+	margin-top: 4%;
+}
+footer > .contact{
+	width: 20%;
+	margin-right: 20%;
+	padding: 0;
+}
+footer > .contact > li > .littel{
+	display: block;
+	margin-top: 10px;
+}
+footer > .footer-item > li{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 32%;
+    height: 30px;
+    vertical-align: text-top;
+}
+
+.littel{
+	font-family: arial;
+	font-size: 0.7em;
+	text-transform: none;
+}
+#after-footer{
+	margin-top: 30px;
+}
+
+#after-footer> .container-fluid > ul > li{
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#after-footer > .littel{
+	text-align: center;
+	padding-top: 30px;
+}
+
+
+@media screen and (max-width: 970px){
+	#logo{
+		top:0;
+		width: 100px;
+		height: 100px;
+		font-size: 44px;
+		line-height: 100px;
+		padding: 0;
+	}
+	header{
+		margin-top: 5%;
+	}
+	header > .container-fluid > .menu > .empty{
+	width: 0%;
+	}
+	
+}
+@media screen and (max-width: 768px){
+	header{
+		font-size: 1.5em;
+	}
+	header > .container-fluid > .menu{
+	width: 65%;
+	padding: 0 8%;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top:5%;
+	}
+	header > .container-fluid > .menu >li{
+		width: 30%;
+		margin-bottom: 5%;
+	}
+	header > .container-fluid > .menu > .menu-item > .sub-menu{
+		background: #f2f2f3;
+		width: 80%;
+		left:12%;
+		z-index: 10;
+	}
+	#logo{
+		margin: 0;
+		width: 100px;
+		height: 100px;
+		font-size: 44px;
+		line-height: 100px;
+	}
+	footer > ul{
+		padding-left: 15%;
+	}
+	footer > .contact{
+		margin-right: 15%;
+	}
+	footer > .contact > .special > .littel_mob{
+		width: 112%;
+	}
+
+}
+
+@media screen and (max-width: 480px){
+	
+	header{
+		font-size: 1.2em;
+	}
+	header > .container-fluid > .menu >li{
+		padding: 4% 1%;
+	}
+	#logo{
+		left: 50%;
+	}
+    header > .container-fluid > .menu >.menu-item > .sub-menu{
+		position: absolute;
+		top:38px;
+		width: 45px;
+		padding: 6px 0;
+		text-align: center;
+		background: #f2f2f3;
+		border-radius: 2px;
+		font-size: 14px;
+		color: #6b7488;
+	}
+	header > .container-fluid > .menu > .menu-item > .sub-menu:before{
+		top: -15px;
+	}
+	h2{
+		font-size: 1.9em;
+	}
+	footer{
+	flex-direction: column;
+	font-size: 0.9em;
+	align-items: center;
+	}
+	footer > .contact{
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin-left: 30%;
+	padding: 0;
+	}
+	footer > .contact > li{
+		width: 28%;
+	}
+	footer > .contact > .special{
+		position: relative;
+		width: 70%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 50px;
+	}
+	footer > .contact > li > .littel_mob{
+		position: relative;
+		padding-left: 20px;
+	}
+	footer > .contact > .special > .littel_mob:before{
+		content: url(../image/adaptive_mob.png);
+		position: absolute;
+		left: 0;
+	}
+	footer > .contact > .special > .littel_info:before{
+		content: url(../image/adaptive_info.png);
+		position: absolute;
+		left: 0;
+	}
+	footer > .contact > li > .littel{
+		font-size: 0.7em;
+		margin: 0;
+	}
+	footer > .contact > li > .littel_info{
+		position: relative;
+		padding-left: 20px;
+	}
+	footer > .contact > .special > .littel > .special_hide{
+		display: none;
+	}
+}
