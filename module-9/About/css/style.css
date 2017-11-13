@@ -134,7 +134,8 @@ h2{
 	left: -20px;
 }
 .line{
-	width: 900px;
+	width: 100%;
+	text-align: center;
 	border-bottom: 1px solid #dedbdb;
 	margin-bottom: 10%;
 }
