@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>module_2</title>
+</head>
+<body>
+	<script>
+		/*
+		   Есть три курорта: taba, sharm или hurgada.
+		   
+		   Необходимо через prompt попросить ввести число, от 1 до 3-х.
+		   
+		   В тексте prompt необходимо написать какое число соотвествует
+		   какому курорту, на ваш выбор.
+		   
+		   После этого вывести сообщение о том, что пользователь 
+		   выбрал такой-то курорт или сообщение о том, что введено
+		   число, варианта курорта для которого не было.
+		*/
+
+		let currentHotel;
+
+		const taba = '1';
+		const sharm = '2';
+		const hurgada = '3';
+
+		let currentNum = prompt('Введите число от 1 до 3-х, где 1-taba, 2-sharm, 3-hurgada ','');
+
+
+		if (currentNum === '1') {
+		  currentHotel = alert('Вы выбрали отлель taba, отличный выбор!');
+		} else if (currentNum === '2'){
+		  currentHotel = alert('Вы выбрали отлель sharm, отличный выбор!');
+		} else if (currentNum === '3'){
+		  currentHotel = alert('Вы выбрали отлель hurgada, отличный выбор!');
+		} else {
+		  currentHotel = alert('Введите правильный номер!');
+		}
+
+
+
+	</script>
+</body>
+</html>
