@@ -10,19 +10,15 @@
 		const b = 'asdfghjkl;';
 		const c = 'zxcvbnm,./';
 
-		console.log(a);
-		console.log(b);
-		console.log(c);
-
 		const aLong = a.length;
 		const bLong = b.length;
 		const cLong = c.length;
 
-		console.log(aLong);
-		console.log(bLong);
-		console.log(cLong);
-
-		console.log(a,b,c, aLong, bLong, cLong, a.charAt(0), a.charAt(a.length-1), b.charAt(0), b.charAt(b.length-1), c.charAt(0), c.charAt(c.length-1), a.indexOf('['), a.indexOf('['))
+		console.log(`Основные три константы: ${a}, ${b} , ${c};
+		   			 Их длины : ${aLong}, ${bLong}, ${cLong};
+		             Ищем первые елементы строк: ${a.charAt(0)}, ${b.charAt(0)}, ${c.charAt(0)};
+		             Последние :  ${a.charAt(a.length-1)}, ${b.charAt(b.length-1)}, ${c.charAt(c.length-1)};
+		             Какой индекс строки соответствует символу "["" и ""]"? : ${a.indexOf('[')}, ${a.indexOf(']')}`);
 
 	</script>
 </body>
