@@ -6,24 +6,40 @@
 </head>
 <body>
 	<script>
-		const alphabet = "qwertyuiop[]asdfghjkl;'zxcvbnm,./";
+		var alphabet = 'qwertyuiopasdfghjklzxcvbnm';
 
-		const a = alphabet.slice(0,12);
-		const b = alphabet.slice(12,22);
-		const c = alphabet.slice(23,32);
+		function  addKeyboardLayout(alphabet){
+			const str1 = [alphabet.slice(0,10)];
+			const str2 = [alphabet.slice(10,19)];
+			const str3 = [alphabet.slice(19,27)];
 
-		const arr = [a,b,c];
-		console.log(arr);
+			const row = [str1, str2, str3];
+			console.log(row);
+			getRandCharInRow(row);
+		}	
 
-		//hello
-		console.log(arr[1][5] + arr[0][2] + arr[1][8] + arr[1][8] + arr[0][8]);
+		function getRandCharInRow(row){
+			let num;
+			do{
+		 		num = parseInt(prompt('Введите номер строки от 1 до 3.'));
+		 	} while (num > 3 || num < 0  || num % 1 !== 0);
 
-		//javascript
-		console.log(arr[1][6] + arr[1][0] + arr[2][3] + arr[1][0] + arr[1][1] + arr[2][2] + arr[0][3] + arr[0][7] + arr[0][9] + arr[0][4]);
 
-        //trainer
-        console.log(arr[0][4] + arr[0][3] + arr[1][0] + arr[0][7] + arr[2][5] + arr[0][2] + arr[0][3]);
 
+		 	let c = row[num-1][0];
+	 		let b = Math.floor(Math.random() * c.length);
+	 		console.log(c[b]);
+		}
+
+		 function getRandCharInAlph(a) {
+		 	let rand = Math.floor(Math.random() * a.length);
+		 	console.log(a[rand]);
+			}
+		addKeyboardLayout(alphabet);
+		getRandCharInAlph(alphabet);
+
+		
 	</script>
+	
 </body>
 </html>
