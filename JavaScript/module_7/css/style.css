@@ -1,0 +1,32 @@
+#container { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 80%;
+	margin: 20% auto;
+ }
+
+
+ li { 
+ 	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: gray;
+	color: white;
+	text-transform: uppercase;
+	padding: 1% 0;
+	font-size: 1rem;
+
+  }
+
+  li > div { 
+	width: 50px;
+	height: 50px;
+	border: 5px solid black;
+   }
+
+  li > div:hover{ 
+	background: green;
+	border: 5px solid yellow;
+	color: yellow;
+   }

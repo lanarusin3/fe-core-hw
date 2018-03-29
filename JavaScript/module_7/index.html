@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<ul id="container">
+		<li class="top"></li>
+		<li class="middle"></li>
+		<li class="bottom"></li>
+	</ul>
+
+
+	<script>
+		const createLayout = { 
+			topRow : ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p','[',']'],
+			middleRow : ['a', 's', 'd', 'f', 'g', 'h', 'j','k', 'l',';', '"'],
+			bottomRow : ['z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/'],
+
+			createContainer() {
+				const top = document.querySelector('.top');
+				let topButtons = '';
+				for (let i = 0; i < this.topRow.length; i++){
+					topButtons +=`<div id ="topButtons_${i+1}">${this.topRow[i]}</div>`;
+				}
+				top.innerHTML = topButtons;
+
+				const middle = document.querySelector('.middle');
+				let middleButtons = '';
+				for (let i = 0; i < this.middleRow.length; i++){
+					middleButtons +=`<div id ="middleButtons_${i+1}">${this.middleRow[i]}</div>`;
+				}
+				middle.innerHTML = middleButtons;
+
+				const bottom = document.querySelector('.bottom');
+				let bottomButtons = '';
+				for (let i = 0; i < this.bottomRow.length; i++){
+					bottomButtons +=`<div id ="bottomButtons_${i+1}">${this.bottomRow[i]}</div>`;
+				}
+				bottom.innerHTML = bottomButtons;
+			}
+		}
+
+		createLayout.createContainer();
+	</script>
+</body>
+</html>
